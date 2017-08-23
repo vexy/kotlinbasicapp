@@ -1,5 +1,6 @@
 package com.vexscited.kotlinexample
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -13,6 +14,18 @@ class Main : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         populateSportsSpinner()
+
+        //create action
+        processButton.setOnClickListener {
+            val resultIntent = Intent(this@Main, results::class.java)
+
+            resultIntent.putExtra("age", ageTextBox.text.toString())
+            resultIntent.putExtra("name", nameTextField.text.toString())
+            resultIntent.putExtra("sport", sportsList.selectedItem.toString())
+
+            startActivity(resultIntent)
+            System.out.println("New activity shown")
+        }
     }
 
     fun populateSportsSpinner() {

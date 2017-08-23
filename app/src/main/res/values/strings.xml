@@ -7,4 +7,5 @@
         <item>Water sports</item>
         <item>Fishing</item>
     </string-array>
+    <string name="title_activity_result">Process results</string>
 </resources>
