@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Very simple Kotlin app</string>
+    <string-array name="sports">
+        <item>Football</item>
+        <item>Basketball</item>
+        <item>Baseball</item>
+        <item>Water sports</item>
+        <item>Fishing</item>
+    </string-array>
+</resources>
